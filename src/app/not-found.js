@@ -1,10 +1,5 @@
-import React from 'react'
-import Home from './page'
-
-const Notfound = () => {
-  return (
-    <Home/>
-  )
+import { redirect } from 'next/navigation';
+export default function NotFound() {
+  redirect('/');
+  return null;
 }
-
-export default Notfound

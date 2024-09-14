@@ -8,7 +8,7 @@ const Skills = () => {
       initial={{ opacity: 0, y: 50 }} 
       animate={{ opacity: 1, y: 0 }} 
       transition={{ duration: 0.5, ease: "easeOut" }} 
-      className='container mx-auto mt-40 px-5 lg:px-16'
+      className='container mx-auto mt-32 px-5 lg:px-16'
     >
       <h2 className='mb-5 text-3xl font-bold tracking-wider inline-block 
       decoration-sh-white underline decoration-1 underline-offset-[15px]'>

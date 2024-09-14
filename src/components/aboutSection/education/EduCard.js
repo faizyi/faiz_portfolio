@@ -1,6 +1,6 @@
 const EduCard = ({ institution, degree, startDate, endDate }) => {
     return (
-      <div className='w-80 max-w-lg p-4 bg-sh-dark-500 border-2 border-sh-dark rounded-lg 
+      <div className='w-full max-w-lg p-4 bg-sh-dark-500 border-2 border-sh-dark rounded-lg 
       text-sh-white hover:shadow-lg transition-transform transform ease-in hover:scale-105'>
         <div className='flex items-center gap-3'>
           <h3 className='block text-lg md:text-xl font-bold'>

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import ContactButton from "./contactButton";
 
 const HeroTwo = () => {
   return (
@@ -23,9 +24,6 @@ const HeroTwo = () => {
 
       {/* Right Description Section */}
       <div className="lg:mt-14 text-center lg:text-left max-w-lg p-5">
-        {/* <h2 className="text-3xl sm:text-4xl md:text-5xl text-white font-bold">
-          MERN Stack Developer
-        </h2> */}
         <p className="text-lg sm:text-xl text-gray-300">
           I am a passionate MERN stack developer skilled in building modern web applications using 
           MongoDB, Express, React, and Node.js. With a focus on creating efficient and scalable applications, 
@@ -34,6 +32,9 @@ const HeroTwo = () => {
         <p className="text-lg sm:text-xl text-gray-300">
           I constantly strive to learn new technologies and improve my skillset to stay updated with industry trends.
         </p>
+
+        {/* Add the ContactButton component here */}
+        <ContactButton/>
       </div>
     </motion.div>
   );

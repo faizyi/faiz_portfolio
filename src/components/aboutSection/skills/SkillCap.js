@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 const SkillCap = ({ name, logo }) => {
 	return (
 		<div className='flex items-center bg-sh-dark-500 border-2 border-sh-dark rounded-lg 
@@ -6,10 +7,10 @@ const SkillCap = ({ name, logo }) => {
 			<div className='relative h-6 w-6'>
 				<Image
 					src={logo}
-					objectFit='contain'
-					layout='fill'
+					fill
+					style={{ objectFit: 'contain' }} // Replaces objectFit prop
 					draggable={false}
-					alt={name + ' logo'}
+					alt={`${name} logo`} // Template string for readability
 				/>
 			</div>
 			<h3 className='ml-2'>{name}</h3>

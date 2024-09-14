@@ -8,7 +8,7 @@ const HeroOne = () => {
           transition={{ duration: 0.5 }}
           className="col-span-1 sm:col-span-8 text-center sm:text-left"
         >
-          <h1 className="xs:ml-1 sm:ml-14 lg:ml-24 mt-10 text-white mb-4 text-5xl sm:text-6xl md:text-7xl 
+          <h1 className="xs:ml-1 sm:ml-14 lg:ml-24 mt-1 text-white mb-4 text-5xl sm:text-6xl md:text-7xl 
           lg:text-8xl xl:text-8xl font-extrabold">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#6461ff]
              via-[#4781ff] to-[#00f7ff]">
