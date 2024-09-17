@@ -1,6 +1,15 @@
 export const projectsData = [
+  {
+    id: 1,
+    title: "Chat App",
+    description: "Project 1 description",
+    image: "/images/projects/chat.jpg",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "https://mern-chat-gamma.vercel.app/",
+  },
     {
-      id: 1,
+      id: 2,
       title: "Weather Website",
       description: "Project 1 description",
       image: "/images/projects/weather.png",
@@ -9,7 +18,7 @@ export const projectsData = [
       previewUrl: "https://faizyi.github.io/react-weather-app/",
     },
     {
-      id: 2,
+      id: 3,
       title: "Todo Website",
       description: "Project 2 description",
       image: "/images/projects/todo.jpg",
@@ -18,7 +27,7 @@ export const projectsData = [
       previewUrl: "https://faizyi.github.io/react-todoapp/",
     },
     {
-      id: 3,
+      id: 4,
       title: "Expense Manager",
       description: "Project 3 description",
       image: "/images/projects/ems.png",
