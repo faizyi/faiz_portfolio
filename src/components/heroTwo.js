@@ -27,10 +27,13 @@ const HeroTwo = () => {
           Hi, I'm Faiz Noor
         </h2>
         <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
-          I’m a passionate MERN stack developer, skilled in building modern web applications using MongoDB, Express, React, and Node.js. I specialize in creating efficient, scalable, and dynamic solutions that drive seamless user experiences.
+          I’m a passionate MERN & MENN stack developer, skilled in building modern web 
+          applications using MongoDB, Express, React, Next and Node.js. I specialize 
+          in creating efficient, scalable, and dynamic solutions that drive seamless user experiences.
         </p>
         <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
-          I’m always learning and evolving, staying updated with the latest trends and technologies to deliver top-notch full-stack solutions.
+          I’m always learning and evolving, staying updated with the latest trends 
+          and technologies to deliver top-notch full-stack solutions.
         </p>
 
         {/* Download CV Button */}

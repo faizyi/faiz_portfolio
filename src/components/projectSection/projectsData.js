@@ -5,7 +5,7 @@ export const projectsData = [
     description: "Project 1 description",
     image: "/images/projects/chat.jpg",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/faizyi/MERN-Chat",
     previewUrl: "https://mern-chat-gamma.vercel.app/",
   },
     {
@@ -14,7 +14,7 @@ export const projectsData = [
       description: "Project 1 description",
       image: "/images/projects/weather.png",
       tag: ["All", "Web"],
-      gitUrl: "/",
+      gitUrl: "https://github.com/faizyi/react-weather-app",
       previewUrl: "https://faizyi.github.io/react-weather-app/",
     },
     {
@@ -23,7 +23,7 @@ export const projectsData = [
       description: "Project 2 description",
       image: "/images/projects/todo.jpg",
       tag: ["All", "Web"],
-      gitUrl: "/",
+      gitUrl: "https://github.com/faizyi/react-todoapp",
       previewUrl: "https://faizyi.github.io/react-todoapp/",
     },
     {
@@ -32,7 +32,7 @@ export const projectsData = [
       description: "Project 3 description",
       image: "/images/projects/ems.png",
       tag: ["All", "Web"],
-      gitUrl: "/",
+      gitUrl: "https://github.com/faizyi/React-EMS",
       previewUrl: "https://faizyi.github.io/React-EMS/",
     },
   ];

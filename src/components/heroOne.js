@@ -18,22 +18,24 @@ const HeroOne = () => {
       {/* Background Overlay for Better Text Visibility */}
       <div className="absolute inset-0 bg-black opacity-40"></div>
 
-      {/* Content Section */}
-      <div className="relative text-center sm:text-left z-10">
+      <div className="w-full relative mt-[-9] text-center sm:text-left z-10">
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-extrabold leading-tight mb-6">
           <span className="block bg-clip-text text-transparent bg-gradient-to-r from-[#4a67b4] to-[#6f65ff]">
             Hello, I'm
           </span>
-          <span className="block mt-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#fff5f5] to-[#fbc2eb]">
+          <span className="block mt-2 font-semibold text-transparent bg-clip-text bg-gradient-to-r
+           from-[#fff5f5] to-[#fbc2eb]">
             <TypeAnimation
               sequence={[
-                "Web Developer",
-                1000,
-                "Mobile Developer",
-                1000,
+                "Front-end Developer",
+                2000,
+                "Back-end Developer",
+                2000,
+                // "Mobile Developer",
+                // 1000,
               ]}
               wrapper="span"
-              speed={80}
+              speed={40}
               repeat={Infinity}
             />
           </span>
