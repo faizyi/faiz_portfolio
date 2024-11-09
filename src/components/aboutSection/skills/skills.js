@@ -1,3 +1,4 @@
+"use client"
 import SkillCap from './SkillCap'
 import { skillsData } from './skillsData'
 import { motion } from 'framer-motion'
@@ -7,14 +8,14 @@ const Skills = () => {
     <motion.section 
       initial={{ opacity: 0, y: 50 }} 
       animate={{ opacity: 1, y: 0 }} 
-      transition={{ duration: 0.5, ease: "easeOut" }} 
-      className='container mx-auto mt-32 px-5 lg:px-16'
+      transition={{ duration: 0.6, ease: "easeOut" }} 
+      className='container mx-auto mt-12 px-5 lg:px-16'
     >
-      <h2 className='mb-5 text-3xl font-bold tracking-wider inline-block 
-      decoration-sh-white underline decoration-1 underline-offset-[15px]'>
-        Skills
+      <h2 id='about' className='text-4xl font-extrabold text-center text-white mb-12'>
+        My Skills
       </h2>
-      <div className='mt-3 w-full flex flex-wrap gap-4'>
+
+      <div className='mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
         {skillsData.map((item, index) => (
           <motion.div
             key={item.id}
@@ -22,6 +23,7 @@ const Skills = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4, delay: index * 0.2 }}
             viewport={{ once: true }}
+            className="flex justify-center"
           >
             <SkillCap key={item.id} {...item} />
           </motion.div>
@@ -31,4 +33,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default Skills;

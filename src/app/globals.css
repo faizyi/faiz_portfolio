@@ -1,16 +1,17 @@
+/* Global Tailwind Setup */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: black;
+  --background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  --foreground: #1a202c;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: black;
-    --foreground: #ededed;
+    --background: linear-gradient(135deg, #1a202c, #2d3748);
+    --foreground: #f7fafc;
   }
 }
 
@@ -18,8 +19,10 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  background-attachment: fixed;
 }
 
+/* Additional custom utility class for text balancing */
 @layer utilities {
   .text-balance {
     text-wrap: balance;

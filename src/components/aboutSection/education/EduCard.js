@@ -1,21 +1,19 @@
 const EduCard = ({ institution, degree, startDate, endDate }) => {
-    return (
-      <div className='w-full max-w-lg p-4 bg-sh-dark-500 border-2 border-sh-dark rounded-lg 
-      text-sh-white hover:shadow-lg transition-transform transform ease-in hover:scale-105'>
-        <div className='flex items-center gap-3'>
-          <h3 className='block text-lg md:text-xl font-bold'>
-            {institution}
-          </h3>
-        </div>
-        <div className='mt-1'>
-          <p>{degree}</p>
-          <p className='text-sm text-sh-white-500'>
-            <span>{startDate}</span> - <span>{endDate}</span>
-          </p>
-        </div>
+  return (
+    <div className='bg-gray-800 rounded-lg p-6 shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl'>
+      <div className='flex flex-col md:flex-row items-center justify-between'>
+        {/* Institution Name */}
+        <h3 className='text-xl font-semibold text-white'>{institution}</h3>
+        {/* Date Range */}
+        <p className='text-sm text-gray-400 mt-2 md:mt-0'>{startDate} - {endDate}</p>
       </div>
-    );
-  };
-  
-  export default EduCard;
-  
+
+      {/* Degree Information */}
+      <div className='mt-4'>
+        <p className='text-lg text-white'>{degree}</p>
+      </div>
+    </div>
+  );
+};
+
+export default EduCard;
