@@ -25,9 +25,9 @@ function ProjectsSection() {
 
   return (
     <section id="projects" className="px-4 md:px-8 lg:px-16 py-16 bg-gray-800">
-      <motion.section 
-        initial={{ opacity: 0, y: 50 }} 
-        animate={{ opacity: 1, y: 0 }} 
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <h2 className="text-center text-3xl md:text-4xl font-extrabold text-white mb-8 md:mb-12">
@@ -36,7 +36,7 @@ function ProjectsSection() {
 
         {/* Tag Filter Buttons */}
         <div className="text-center flex justify-center gap-4 md:gap-6 mb-8 md:mb-12">
-          {["All", "Web",].map((category) => (
+          {["All", "Web", "App"].map((category) => (
             <ProjectTag
               key={category}
               onClick={handleTagChange}
@@ -45,12 +45,12 @@ function ProjectsSection() {
             />
           ))}
         </div>
-      </motion.section>
+      </motion.div>
 
       {/* Project Cards Grid */}
       <ul
         ref={ref}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+        className="flex flex-col space-y-8"
       >
         {filteredProjects.map((project, index) => (
           <motion.li
@@ -63,6 +63,7 @@ function ProjectsSection() {
             <ProjectCard
               title={project.title}
               description={project.description}
+              shortDescription={project.shortDescription}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}

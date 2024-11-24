@@ -1,6 +1,6 @@
 const ProjectTag = ({ name, onClick, isSelected }) => {
   const buttonStyles = isSelected
-    ? "text-white bg-gradient-to-r from-blue-500 to-indigo-600 border-transparent"
+    ? "text-white bg-blue-600 border-transparent"
     : "text-gray-600 bg-transparent border-gray-300 hover:border-blue-500 hover:text-blue-500";
 
   return (
