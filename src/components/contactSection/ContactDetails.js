@@ -1,5 +1,10 @@
 "use client";
-import { AiOutlineMail, AiOutlinePhone, AiOutlineEnvironment } from "react-icons/ai";
+import {
+  AiOutlineMail,
+  AiOutlinePhone,
+  AiOutlineEnvironment,
+} from "react-icons/ai";
+import { FaFlag } from "react-icons/fa"; // Add icon for nationality
 import { motion } from "framer-motion";
 
 const ContactDetails = () => {
@@ -14,7 +19,9 @@ const ContactDetails = () => {
         Get In Touch
       </h2>
       <p className="leading-relaxed">
-        I would love to hear from you! Whether you have a question, proposal, or just want to say hello, feel free to reach out using the contact details below.
+        I would love to hear from you! Whether you have a question, proposal,
+        or just want to say hello, feel free to reach out using the contact
+        details below.
       </p>
 
       {/* Contact Details */}
@@ -34,17 +41,23 @@ const ContactDetails = () => {
         <div className="flex items-center space-x-4">
           <AiOutlinePhone className="text-primary-500" size={28} />
           <a
-            href="tel:+923225285854"
+            href="tel:+9660591188421"
             className="hover:text-primary-400 transition duration-300"
           >
-            +92 322 5285854
+            +9660591188421
           </a>
         </div>
 
         {/* Location */}
         <div className="flex items-center space-x-4">
           <AiOutlineEnvironment className="text-primary-500" size={28} />
-          <span>Karachi, Pakistan</span>
+          <span>Hafar al Batin, Saudi Arabia</span>
+        </div>
+
+        {/* Nationality */}
+        <div className="flex items-center space-x-4">
+          <FaFlag className="text-primary-500" size={28} />
+          <span>Nationality: Pakistan</span>
         </div>
       </div>
     </motion.div>
