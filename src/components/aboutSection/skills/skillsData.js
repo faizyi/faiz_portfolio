@@ -49,5 +49,17 @@ export const skillsData = [
 		name: 'Express.js',
 		logo: '/images/skills/express.png',
 	},
+	{
+		id: 10,
+		name: 'Docker',
+		logo: '/images/skills/docker.png',
+	},
+	{
+		id: 11,
+		name: 'Redis',
+		logo: '/images/skills/redis.png',
+	},
+	
+
 	
 ];
